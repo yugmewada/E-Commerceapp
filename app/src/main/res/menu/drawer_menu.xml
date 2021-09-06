@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:icon="@drawable/ic_home"
+            android:id="@+id/nav_home"
+            android:title="Home Page">
+        </item>
+
+        <item
+            android:icon="@drawable/ic_person"
+            android:id="@+id/nav_profie"
+            android:title="Profile">
+        </item>
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+
+            <item
+                android:icon="@drawable/ic_update"
+                android:id="@+id/nav_profie_update"
+                android:title="Update Profile">
+            </item>
+
+            <item
+                android:icon="@drawable/ic_house"
+                android:id="@+id/nav_profie_addresses"
+                android:title="Your Addresses">
+            </item>
+
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:title="About Us"
+                android:icon="@drawable/ic_about">
+            </item>
+
+            <item
+                android:id="@+id/nav_chat"
+                android:title="Chat"
+                android:icon="@drawable/ic_chat">
+            </item>
+
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:icon="@drawable/ic_delete"
+                android:id="@+id/nav_profie_delete"
+                android:title="Delete Account">
+            </item>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout">
+            </item>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shopping App</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string name="open">Drawer Open</string>
+    <string name="close">Drawer Close</string>
+    <string name="msgTitle">Shopping App</string>
+    <string name="rupees">₹</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:background="@drawable/custom_toolbar"
+    android:id="@+id/nav_header">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sampleImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/avtar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="22dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sampleImage"
+        android:text="E-Commerce App"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/menu_email"
+        android:layout_below="@+id/menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info@testproject.com"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
