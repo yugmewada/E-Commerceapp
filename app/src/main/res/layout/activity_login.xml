@@ -24,6 +24,7 @@
         </TextView>
     </RelativeLayout>
 
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/samImage"
         android:layout_width="85dp"

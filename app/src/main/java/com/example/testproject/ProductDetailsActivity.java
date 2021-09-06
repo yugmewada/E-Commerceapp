@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,11 +14,14 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+
 public class ProductDetailsActivity extends AppCompatActivity {
     Toolbar toolbar;
     TextView prodName,prodPrice,prodCompany,prodDescription;
     ImageView imageView;
     Bundle bundle;
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -40,6 +45,14 @@ public class ProductDetailsActivity extends AppCompatActivity {
                 ProductDetailsActivity.super.onBackPressed();
             }
         });
+
+        /*for(int i=1; i<=10; i++){
+            list= new ArrayList<>();
+            list.add(String.valueOf(i));
+            arrayAdapter= new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,list);
+            arrayAdapter.setDropDownViewResource(android.R.layout.simple_list_item_checked);
+            spinner.setAdapter(arrayAdapter);
+        }*/
 
         getproductDetails();
     }

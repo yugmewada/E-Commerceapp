@@ -22,39 +22,74 @@
             android:layout_gravity="center">
         </ImageView>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginLeft="10dp">
 
             <TextView
-                android:id="@+id/productName_TV"
-                android:layout_width="match_parent"
+                android:id="@+id/productName_TV1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18.5dp"
+                android:textSize="17dp"
                 android:textColor="@color/black"
                 android:padding="3dp"
-                >
+                android:text="Name: ">
             </TextView>
 
             <TextView
-                android:id="@+id/productPrice_TV"
-                android:layout_width="match_parent"
+                android:id="@+id/productName_TV"
+                android:layout_toRightOf="@+id/productName_TV1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="17dp"
                 android:textColor="@color/black"
                 android:padding="3dp">
             </TextView>
 
             <TextView
-                android:id="@+id/productCompanyName_TV"
-                android:layout_width="match_parent"
+                android:id="@+id/productPrice_TV1"
+                android:layout_below="@+id/productName_TV"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="15dp"
                 android:textColor="@color/black"
                 android:padding="3dp"
-                >
+                android:text="Price: ">
             </TextView>
-        </LinearLayout>
+
+            <TextView
+                android:id="@+id/productPrice_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName_TV1"
+                android:layout_toRightOf="@+id/productPrice_TV1"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:padding="3dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/productCompanyName_TV1"
+                android:layout_below="@+id/productPrice_TV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:text="Company: ">
+            </TextView>
+
+            <TextView
+                android:id="@+id/productCompanyName_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/productCompanyName_TV1"
+                android:layout_below="@+id/productPrice_TV"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:padding="3dp">
+            </TextView>
+        </RelativeLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
